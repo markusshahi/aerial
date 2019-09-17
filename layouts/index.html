@@ -21,7 +21,7 @@
 	<body class="loading">
 		<div id="wrapper">
 			<div id="bg" {{ with .Site.Params.bg_scroll}} class="no-scroll" {{end}}></div>
-			<div id="overlay"></div>
+			{{ with .Site.Params.bg_overlay}}<div id="overlay"></div>{{end}}
 			<div id="main">
 
 				<!-- Header -->
